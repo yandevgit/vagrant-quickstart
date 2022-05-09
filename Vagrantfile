@@ -8,9 +8,8 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", path: "provision-tomcat.sh"
     
   config.vm.provider "virtualbox" do |vb|
-	vb.name = "TomcatDevServer"
+	vb.name = "TomcatDev"
     vb.memory = "1024"
 	vb.cpus = 1
-#	vb.gui = false
   end
 end
